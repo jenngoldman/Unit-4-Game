@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unit 4 Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1 class="game-title">Crystal Collector</h1>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <h2 class="header-style">Instructions:</h2>
+                <p class="how-to-instructions"> You will be given a random number at the start of the game. <br>
+                There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.<br>
+                The value of each crystal is hidden from you until you click on it. <br>
+                You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.<br>
+                Each time when the game starts, the game will change the value of each crystal. <br>
+                Good luck! </p>
+            </div>
+        </div>    
+                <div class="row">
+                    <h2 class="header-style col-12">Crystals</h2>
+                    <div class="col-3">
+                        <img id="blue" src="assets/images/blue.png" alt="Blue crystal">
+                    </div>
+        
+                    <div class="col-3">
+                        <img id="green" src="assets/images/green.png" alt="Green crystal">
+                    </div>
+        
+                    <div class="col-3">
+                        <img id="yellow" src="assets/images/yellow.png" alt="Yellow crystal">
+                    </div>
+        
+                    <div class="col-3">
+                        <img id="red" src="assets/images/red.png" alt="Red crystal">
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-6">
+                </div>
+                </div>
+    
+
+        <div class="row">
+            <div class="col-6">
+                <h2 class="header-style">Total Score:</h2>
+                <div id="total-score"></div>
+            </div>    
+            <div class="col-6">
+                <h2 class="header-style">Count</h2>
+                <p>Wins: <span id="win-count"></span>
+                <p>Losses: <span id="loss-count"></span></p>    
+            </div>    
+        </div>    
+
+
+    </div>
+                
+    
+
+
+
+        
+<!-- Link to jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Link to Game Logic -->
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>
